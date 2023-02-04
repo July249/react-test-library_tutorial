@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MyPage from "./components/MyPage";
 
 function App() {
   return (
     <div className="App">
+      <MyPage user={{ name: "Kim" }} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
