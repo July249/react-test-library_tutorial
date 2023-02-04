@@ -2,12 +2,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import MyPage from "./components/MyPage";
 import GetByQueries from "./components/GetByQueries";
+import UserList from "./components/UserList";
 
 function App() {
   return (
     <div className="App">
       <MyPage user={{ name: "Kim" }} />
       <GetByQueries />
+      <UserList users={["Tom", "Jane", "Mike"]} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
